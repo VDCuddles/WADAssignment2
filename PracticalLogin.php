@@ -20,9 +20,9 @@
 			//redirect the user to the correct page	
 			//find out where to go after login
 			if (isset($_SESSION['request_page']))
-		    $redirect_page = "http://dochyper.unitec.ac.nz/xli2017s1_wad/PHPPractical/index.php?content_page=".$_SESSION['request_page'];
+		    $redirect_page = "http://dochyper.unitec.ac.nz/halpea01/PHPPractical/WADPHPAssignment/index.php?content_page=".$_SESSION['request_page'];
 			else
-			$redirect_page = "http://dochyper.unitec.ac.nz/xli2017s1_wad/PHPPractical/index.php";
+			$redirect_page = "http://dochyper.unitec.ac.nz/halpea01/PHPPractical/WADPHPAssignment/index.php";
 				
             //redirect the user to the correct page after login
 			header("Location: ".$redirect_page);
@@ -34,5 +34,5 @@
 <form method="post">
 Username: <input style="color:#000000;" type="text" name="form_username"><br>
 Password: <input style="color:#000000;" type="password" name="form_password"><br>
-<input type="submit" value="Submit">
+<input type="submit" value="Submit" style="color: black">
 </form>

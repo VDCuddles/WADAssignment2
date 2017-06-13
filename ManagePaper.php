@@ -21,7 +21,7 @@
     <td><input type="text" name="paper_author" size="45"></td>
   </tr>
     <tr>
-    <td colspan="2"><input type="Submit" name="submit" value="Submit Document"></td>
+        <td colspan="2"><input type="Submit" name="submit" value="Submit Document" style="color:black;"></td>
   </tr>
 </table>
 </form>

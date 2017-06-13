@@ -1,5 +1,5 @@
 <p>
-  <a href="index.php?content_page=Introduction">Introduction Page</a><br/>
+  <a href="index.php?content_page=Introduction">Home</a><br/>
   <a href="index.php?content_page=InformationForAuthors">Information For Authors</a><br/>
   <a href="index.php?content_page=ImportantDates">Important Dates</a><br/>
   <a href="index.php?content_page=ManagePaper">Manage Paper</a><br/>

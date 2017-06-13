@@ -74,7 +74,7 @@ require("CheckLogin.php");
 	</script>
 </head>
 <body>
-		Student Name: <input name="txtStudentName" size="20" id="txtStudentName"/> <br />
-        <input type="button" value="Submit Input" onclick="testStudentName();"  />
+		Student Name: <input name="txtStudentName" size="20" style="color:black" id="txtStudentName"/> <br />
+        <input type="button" value="Submit Input" style="color:black" onclick="testStudentName();"  />
 </body>
 </html>

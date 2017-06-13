@@ -1,7 +1,7 @@
 ﻿body 
 {
    background-color: #d7995e;
-   color: red;
+   color: #ffd17b;
 }
 
 h1, h2, h3, h4, h5, h6, th
@@ -27,10 +27,10 @@ color: #ffd17b;
 #invoice td, #invoice th{padding: 6px; border: 1px solid maroon;}
 
 /*The style for the Master page */
-#header{background-image:url(../WAImages/backdrop.jpg); background-repeat:no-repeat; width:100%; height:200px; background-size:cover; position:fixed; top:0px;}
+#header{background-image:url(../WAImages/backdrop.jpg); background-repeat: no-repeat; width:100%; height:200px; background-size:cover; position:fixed; top:0px; border: 1px solid #d7995e;}
 #logo{background-image:url(../WAImages/logo.png); background-repeat:no-repeat; width:200px; height:80px; margin-top:60px;}
-#left{background-color:#2b1508; padding-top:20px; top:150px; height:800px;}
-#right{top:150px; height:800px; background-color:#150a06;}
+#left{background-image:url(../WAImages/backdrop_dark.png); background-repeat: repeat-y;  padding-top:20px; top:150px; height:800px; border: 1px solid #d7995e;}
+#right{top:150px; height:800px; background-image:url(../WAImages/backdrop_darker.png); background-repeat: repeat-y; border: 1px solid #d7995e; border-left: none;}
 
 /*The style for the table on ImportantDates page */
 #IDates{margin:auto; border:3px solid red; border-spacing:0px; border-collapse:collapse;}

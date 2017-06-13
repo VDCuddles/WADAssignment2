@@ -19,7 +19,7 @@
 		//Save the file name requested initially
 		$_SESSION['request_page'] = $full_name;
 		//redirecting user to the login page
-		header("Location: http://dochyper.unitec.ac.nz/xli2017s1_wad/PHPPractical/index.php?content_page=PracticalLogin");
+		header("Location: http://dochyper.unitec.ac.nz/halpea01/PHPPractical/WADPHPAssignment/index.php?content_page=PracticalLogin");
         exit;
     }
 	else

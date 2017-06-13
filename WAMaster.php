@@ -17,14 +17,14 @@
              <span class="icon-bar"></span>
              <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" runat="server" href="index.php?content_page=Introduction">WA2017</a>
+          <a class="navbar-brand" runat="server" href="index.php?content_page=Introduction">Quality Bags</a>
     </div>
     <!--links-->
     <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
     <li><a runat="server" href="index.php?content_page=Introduction">Home</a></li>
-    <li><a runat="server" href="index.php?content_page=WAAboutUs">AboutUs</a></li>
-    <li><a runat="server" href="index.php?content_page=WAContactUs">ContactUs</a></li>
+    <li><a runat="server" href="index.php?content_page=WAAboutUs">About Us</a></li>
+    <li><a runat="server" href="index.php?content_page=WAContactUs">Contact Us</a></li>
     <li><a runat="server" href="index.php?content_page=ManagePaper">Manage Papers</a></li>
     </ul>
     </div>

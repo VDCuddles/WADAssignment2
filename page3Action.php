@@ -24,7 +24,7 @@
 	if(isset($_POST['CompanyName']))
 	{
 	// create connection 
-$mysqli = new mysqli("localhost", "xli2017s1_wad", "11111111", "xli2017s1_wadmysql1");
+$mysqli = new mysqli("localhost", "halpea01", "12111990", "halpea01mysql1");
 if ($mysqli->connect_errno) {
     echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 }
@@ -41,7 +41,7 @@ if ($mysqli->connect_errno) {
 	$mysqli->close(); 
 	} //end if company
 	
-	$mysqli = new mysqli("localhost", "xli2017s1_wad", "11111111", "xli2017s1_wadmysql1");
+	$mysqli = new mysqli("localhost", "halpea01", "12111990", "halpea01mysql1");
 if ($mysqli->connect_errno) {
     echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 }
