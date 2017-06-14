@@ -1,19 +1,26 @@
+.body{
+    	background-image:url(../WAImages/backdrop_dark.png); background-repeat: repeat-y;
+}
+
 #shoppingcart{
 	margin-top:0px;
 	margin-left: 50px;
 	height: 100px;
 	width: 600px;
-	background: #eee;
-	border: 1px solid #444;
+	background-image:url(../WAImages/backdrop_dark.png); background-repeat: repeat-y;
+	border: 1px solid #cf942d;
+        color: #cf942d;
+
 }
 
 #booklist, #contents {
 	margin-top: 10px;
 	margin-left: 50px;
 	alignment-adjust:central;	
-    width: 600px;
-	background: #ddd;
-	border: 1px solid #333;
+        width: 600px;
+	background-image:url(../WAImages/backdrop_darker.png); background-repeat: repeat-y;
+	border: 1px solid #cf942d;
+        color: #cf942d;
 }
 
 #booklist ul {
@@ -22,6 +29,7 @@
 
 #booklist ul li {
 	margin: 0 1em 1em;
+        color: #cf942d;
 }
 
 #contents table {

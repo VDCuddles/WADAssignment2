@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>WA2017</title>
+<title>Quality Bags</title>
     <script src="WABootstrap/bootstrap.js" type="text/javascript">
 	</script>
      <script src="WABootstrap/jquery-1.10.2.js" type="text/javascript">
