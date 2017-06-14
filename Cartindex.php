@@ -2,9 +2,11 @@
 ob_start(); //set buffer on
 session_start(); //starting session
 
-// Include business layer
-require_once('business_layer\business.inc.php');
+// Include functions
+require_once('business_layer/business.inc.php');
 
+// Process actions for this page
+Business::processActions();
 ?>
 <!DOCTYPE>
 	
@@ -15,6 +17,7 @@ require_once('business_layer\business.inc.php');
 </head>
 
 <body>
+    
 <div id="shoppingcart">
 
 <h2>Your Shopping Cart</h2>

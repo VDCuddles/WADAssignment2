@@ -9,6 +9,7 @@ require_once('business_layer/business.inc.php');
 Business::processActions();
 ?>
 <!DOCTYPE>
+
 <html>
 <head>
 	<title>PHP Shopping Cart Demo &#0183; Cart</title>
@@ -35,7 +36,7 @@ echo Business::writeShoppingCart();
 echo Business::showCart();
 ?>
 
-<p><a href="index.php">Back to bookshop...</a></p>
+<!--<p><a href="index.php">Back to bookshop...</a></p>-->
 
 </div>
 

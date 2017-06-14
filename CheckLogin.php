@@ -8,7 +8,7 @@
 		{
 		$full_name = $_SERVER['PHP_SELF'];
 		$full_name = str_replace(".php","",$full_name);
-		$full_name = str_replace("/xli2017s1_wad/PHPPractical/","",$full_name);
+		$full_name = str_replace("/halpea01/PHPPractical/","",$full_name);
 		}
 		else
 		{
