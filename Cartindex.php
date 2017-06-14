@@ -12,7 +12,7 @@ Business::processActions();
 	
 <html>
 <head>
-	<title>PHP Shopping Cart Demo &#0183; Bookshop</title>
+	<title>Shopping Cart&#0183; Bags</title>
 	<link rel="stylesheet" href="css/shopping-styles.css" />
 </head>
 
@@ -30,7 +30,7 @@ echo Business::writeShoppingCart();
 
 <div id="booklist">
 
-<h2>Books In Our Store</h2>
+<h2>Bags For Sale</h2>
 
 <?php
 echo Business::displayBooks();

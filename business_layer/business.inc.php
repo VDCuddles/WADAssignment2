@@ -137,7 +137,9 @@ $_SESSION['cart'] = $cart;
 	
 	$output[] = '<ul>';
 	while ($row = $result->fetch()) {
-		$output[] = '<li>"'.$row['title'].'" by '.$row['author'].': &pound;'.$row['price'].'<br /><a href="cart.php?action=add&id='.$row['id'].'">Add to cart</a></li>';
+		$output[] = '<li>"'.$row['title'].'" by '.$row['author'].': &pound;'
+                        .$row['price'].'<br /><a href="index.php?content_page=cart&action=add&id='
+                        .$row['id'].'">Add to cart</a></li>';
 	}
 	$output[] = '</ul>';
 	echo join('',$output);
