@@ -1567,7 +1567,8 @@ pre {
   color: #333;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #ffd17b;
+  background-image:url(../WAImages/backdrop.jpg); 
+  background-repeat: no-repeat;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
