@@ -10,37 +10,47 @@
 <form method="post" enctype="multipart/form-data" action="index.php?content_page=ManagePaperAction">
 <table>
   <tr>
-    <td>Title:</td>
-    <td><input type="text" name="paper_title" size="45"></td>
+    <td>Desired Username:</td>
+    <td><input type="text" name="username" size="45"></td>
+  </tr>
+  <tr><td><br></td></tr>
+  <tr>
+    <td>Password:</td>
+    <td><input type="password" name="pass" size="45"></td>
   </tr>
   <tr><td><br></td></tr>
   <tr>
     <td>Contact Name:</td>
-    <td><input type="text" name="paper_author" size="45"></td>
+    <td><input type="text" name="name" size="45"></td>
+  </tr>
+  <tr><td><br></td></tr>
+    <tr>
+    <td>Email Address:</td>
+    <td><input type="email" name="email" size="45"></td>
   </tr>
   <tr><td><br></td></tr>
    <tr>
     <td>Address:</td>
-    <td><input type="text" name="paper_author" size="45"></td>
+    <td><input type="text" name="address" size="45"></td>
   </tr>
   <tr><td><br></td></tr>
    <tr>
     <td>City:</td>
-    <td><input type="text" name="paper_author" size="45"></td>
+    <td><input type="text" name="city" size="45"></td>
   </tr>
   <tr><td><br></td></tr>
    <tr>
     <td>Country:</td>
-    <td><input type="text" name="paper_author" size="45"></td>
+    <td><input type="text" name="country" size="45"></td>
   </tr>
   <tr><td><br></td></tr>
    <tr>
     <td>Phone:</td>
-    <td><input type="text" name="paper_author" size="45"></td>
+    <td><input type="number" name="phone" size="45"></td>
   </tr>
   <tr><td><br></td></tr>
-    <td>File Name:</td>
-    <td><input type="File" name="paper_file" value="" size="30"></td>
+    <td>Profile Image:</td>
+    <td><input type="File" name="image" value="" size="30"></td>
   </tr>
     <tr><td><br></td></tr>
     <tr>

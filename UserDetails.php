@@ -12,7 +12,7 @@
 		echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 	}
 	  // query the users table for name and surname 
-	  $sql = "SELECT LastName, FirstName FROM Employees Where LastName='".$inputUsername."' AND FirstName='".$inputPassword."'";
+	  $sql = "SELECT Username, Password FROM customers Where Username='".$inputUsername."' AND Password='".$inputPassword."'";
 
 	 //Execute query
 	$rs=$mysqli->query($sql);
