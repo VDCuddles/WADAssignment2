@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$user = 'xli2017s1_wad'; //Your dochyper username
-$pass = '11111111'; //Your dochyper password
-$name = 'xli2017s1_wadmysql1'; //The databse name you want to use 
+$user = 'halpea01'; //Your dochyper username
+$pass = '12111990'; //Your dochyper password
+$name = 'halpea01mysql1'; //The databse name you want to use 
 ?>

@@ -36,7 +36,7 @@ echo Business::writeShoppingCart();
 echo Business::showCart();
 ?>
 
-<p><a href="index.php?content_page=Cartindex">Back to cart</p>
+<p><a href="index.php?content_page=Browse">Back to shopping</p>
 
 </div>
 

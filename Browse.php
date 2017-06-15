@@ -90,7 +90,7 @@ echo "<th>Supplier ID</th>";
 echo "<th>Category ID</th>";
 echo "<th>Price</th>";
 echo "<th>Stock</th>";
-echo "<th>Choice</th></tr>";
+echo "<th>Purchase</th></tr>";
 
    // Test if this is the first page 
 	if (isset($_GET['pg']))
@@ -133,7 +133,7 @@ echo "<th>Choice</th></tr>";
             echo "<td>$catid</td>";
             echo "<td>$price</td>";
             echo "<td>$stock</td>";
-            echo "<td><input type='radio' name='choice' checked='true' value=$id></td></tr>";
+            echo '<td><a href="index.php?content_page=cart&action=add&id='.$pid.'">Add to cart</a></td></tr>';
 	}
 	
 	echo "</table>";

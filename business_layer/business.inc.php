@@ -35,24 +35,26 @@ class Business {
 		$output[] = '<form action="index.php?content_page=cart&action=update" method="post" id="cart">';
 		$output[] = '<table>';
 		foreach ($contents as $id=>$qty) {
-			$sql = 'SELECT * FROM books WHERE id = '.$id;
+			$sql = 'SELECT * FROM products WHERE ProductID = '.$id;
 			$result = $db->query($sql);
 			$row = $result->fetch();
 			extract($row);
 			$output[] = '<tr>';
 			$output[] = '<td><a href="index.php?content_page=cart&action=delete&id='.$id.'" class="r">Remove</a></td>';
-			$output[] = '<td>'.$title.' by '.$author.'</td>';
-			$output[] = '<td>&pound;'.$price.'</td>';
+			$output[] = '<td>'.$ProductName.' of '.$UnitsInStock.' in stock.</td>';
+			$output[] = '<td>$'.$UnitPrice.'</td>';
 			$output[] = '<td><input type="text" name="qty'.$id.'" value="'.$qty.'" size="3" maxlength="3" /></td>';
-			$output[] = '<td>&pound;'.($price * $qty).'</td>';
+			$output[] = '<td>$'.($UnitPrice * $qty).'</td>';
 			
-			$total += $price * $qty;
+			$total += $UnitPrice * $qty;
 			
 			$output[] = '</tr>';
 		}
 		$output[] = '</table>';
-		$output[] = '<p>Grand total: <strong>&pound;'.$total.'</strong></p>';
+		$output[] = '<p>Grand total: <strong>$'.$total.'</strong></p>';
 		$output[] = '<div><button type="submit">Update cart</button></div>';
+//		$output[] = '<div><form action="index.php?content_page=cart&action=clear" method="post"><button type="submit">Clear cart</button></div>';
+                $output[] = '<p><a href="index.php?content_page=cart&action=clear" >Clear cart </a></p>';
 		$output[] = '</form>';
 	} else {
 		$output[] = '<p>You shopping cart is empty.</p>';
@@ -73,6 +75,21 @@ class Business {
 	}
 
     switch ($action) {
+        case 'clear':
+            	if ($cart) {
+			$items = explode(',',$cart);
+			$newcart = '';
+//			foreach ($items as $item) {
+//				if ($_GET['id'] != $item) {
+//					if ($newcart != '') {
+//						$newcart .= ','.$item;
+//					} else {
+//						$newcart = $item;
+//					}
+//				}
+//			}
+			$cart = $newcart;                }
+            break;
 	case 'add':
 		if (isset($cart) && $cart!='') {
 			$cart .= ','.$_GET['id'];
@@ -132,14 +149,14 @@ $_SESSION['cart'] = $cart;
     //Disply available books
 	public static function displayBooks() {
 	global $db;
-	$sql = 'SELECT * FROM books ORDER BY id';
+	$sql = 'SELECT * FROM products ORDER BY ProductID';
 	$result = $db->query($sql);
 	
 	$output[] = '<ul>';
 	while ($row = $result->fetch()) {
-		$output[] = '<li>"'.$row['title'].'" by '.$row['author'].': &pound;'
+		$output[] = '<li>"'.$row['ProductName'].'" by '.$row['UnitsInStock'].': &dollar;'
                         .$row['price'].'<br /><a href="index.php?content_page=cart&action=add&id='
-                        .$row['id'].'">Add to cart</a></li>';
+                        .$row['ProductID'].'">Add to cart</a></li>';
 	}
 	$output[] = '</ul>';
 	echo join('',$output);
