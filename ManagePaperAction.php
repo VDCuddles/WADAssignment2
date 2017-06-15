@@ -18,7 +18,7 @@ if (isset($_FILES["paper_file"]) && ($_FILES["paper_file"]["error"] > 0))
   }
 elseif (isset($_FILES["paper_file"]))
   {
-    move_uploaded_file($_FILES["paper_file"]["tmp_name"], "../uploads/PHPUploaded/" . $_FILES["paper_file"]["name"]); //Save the file as the supplied name
+    move_uploaded_file($_FILES["paper_file"]["tmp_name"], "../WADPHPAssignment/WAImages/" . $_FILES["paper_file"]["name"]); //Save the file as the supplied name
   }
 else
   {

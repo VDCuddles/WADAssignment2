@@ -16,7 +16,7 @@ class Business {
 		// Parse the cart session variable
 		$items = explode(',',$cart);
 		$s = (count($items) > 1) ? 's':'';
-		return '<p>You have <a href="cart.php?action=display">'.count($items).' item'.$s.' in your shopping cart</a></p>';
+		return '<p>You have <a href="index.php?content_page=cart&action=display">'.count($items).' item'.$s.' in your shopping cart</a></p>';
 	}
     }
 	
@@ -32,7 +32,7 @@ class Business {
 		foreach ($items as $item) {
 			$contents[$item] = (isset($contents[$item])) ? $contents[$item] + 1 : 1;
 		}
-		$output[] = '<form action="cart.php?action=update" method="post" id="cart">';
+		$output[] = '<form action="index.php?content_page=cart&action=update" method="post" id="cart">';
 		$output[] = '<table>';
 		foreach ($contents as $id=>$qty) {
 			$sql = 'SELECT * FROM books WHERE id = '.$id;
@@ -40,7 +40,7 @@ class Business {
 			$row = $result->fetch();
 			extract($row);
 			$output[] = '<tr>';
-			$output[] = '<td><a href="cart.php?action=delete&id='.$id.'" class="r">Remove</a></td>';
+			$output[] = '<td><a href="index.php?content_page=cart&action=delete&id='.$id.'" class="r">Remove</a></td>';
 			$output[] = '<td>'.$title.' by '.$author.'</td>';
 			$output[] = '<td>&pound;'.$price.'</td>';
 			$output[] = '<td><input type="text" name="qty'.$id.'" value="'.$qty.'" size="3" maxlength="3" /></td>';

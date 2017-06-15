@@ -23,9 +23,10 @@
     <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
     <li><a runat="server" href="index.php?content_page=Introduction">Home</a></li>
+    <li><a runat="server" href="index.php?content_page=Browse">Browse</a></li>
+    <li><a runat="server" href="index.php?content_page=ManagePaper">Manage Papers</a></li>
     <li><a runat="server" href="index.php?content_page=WAAboutUs">About Us</a></li>
     <li><a runat="server" href="index.php?content_page=WAContactUs">Contact Us</a></li>
-    <li><a runat="server" href="index.php?content_page=ManagePaper">Manage Papers</a></li>
     </ul>
     </div>
     </div>

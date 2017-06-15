@@ -30,7 +30,7 @@ if (isset($_FILES["icon_file"]) and ($_FILES["icon_file"]["error"] > 0))
   }
 elseif (isset($_FILES["icon_file"]))
   {
-  move_uploaded_file($_FILES["icon_file"]["tmp_name"], "../uploads/PHPUploaded/" . $_FILES["icon_file"]["name"]); //Save the file as the supplied name
+  move_uploaded_file($_FILES["icon_file"]["tmp_name"], "../WADPHPAssignment/WAImages/" . $_FILES["icon_file"]["name"]); //Save the file as the supplied name
   }
  ?>
  
@@ -89,13 +89,13 @@ while ($row = $rs->fetch_assoc())
   $paper_icon=$row["paper_icon"];
   $img_name = $paper_icon;
   if (!$paper_icon) 
-  {$img_name = "WALogo.gif";}
+  {$img_name = "WAImages/logo.png";}
   echo "<TR>";
   echo "<TD>$paper_id</TD>";
   echo "<TD>$paper_author</TD>";
   echo "<TD>$paper_tile</TD>";
   echo "<TD><div style='background: #FFCCFF; height:60; width:60; padding:10px'>
-            <img src='../uploads/PHPUploaded/" . $img_name ."' width='50' height='50' onClick=\"window.location='index.php?content_page=ReviewerComments&PaperID=" .$paper_id . "'\"></div></TD>";
+            <img src='../WADPHPAssignment/WAImages/" . $img_name ."' width='50' height='50' onClick=\"window.location='index.php?content_page=ReviewerComments&PaperID=" .$paper_id . "'\"></div></TD>";
   echo "</TR>";
 }
 ?>

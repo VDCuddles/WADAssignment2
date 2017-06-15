@@ -24,7 +24,7 @@ color: #ffd17b;
 }
 
 #invoice {border-spacing: 0px; border: 1px solid maroon; width:100%;}
-#invoice td, #invoice th{padding: 6px; border: 1px solid maroon;}
+#invoice td, #invoice th{padding: 6px; border: 1px solid #cf942d;}
 
 /*The style for the Master page */
 #header{background-image:url(../WAImages/backdrop.jpg); background-repeat: no-repeat; width:100%; height:200px; background-size:cover; position:fixed; top:0px; border: 1px solid #d7995e;}
@@ -32,7 +32,7 @@ color: #ffd17b;
 #left{background-image:url(../WAImages/backdrop_dark.png); background-repeat: repeat-y;  padding-top:20px; top:150px; height:800px; border: 1px solid #d7995e;}
 #right{top:150px; height:800px; background-image:url(../WAImages/backdrop_darker.png); background-repeat: repeat-y; border: 1px solid #d7995e; border-left: none;}
 
-/*The style for the table on ImportantDates page */
-#IDates{margin:auto; border:3px solid red; border-spacing:0px; border-collapse:collapse;}
-#IDates td, th{border: 1px solid red;}
+/*The style for the table on Browse page */
+#IDates{margin:auto; border:3px solid #cf942d; border-spacing:0px; border-collapse:collapse;}
+#IDates td, th{border: 1px solid #cf942d;}
 
