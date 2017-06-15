@@ -52,7 +52,7 @@ class Business {
 		}
 		$output[] = '</table>';
 		$output[] = '<p>Grand total: <strong>$'.$total.'</strong></p>';
-                $output[] = '<p><strong><a href="index.php?content_page=cart&action=clear" >Checkout (this currently clears cart)</a></strong></p>';
+                $output[] = '<p><strong><a href="index.php?content_page=Checkout" >Checkout</a></strong></p>';
 		$output[] = '<div><button type="submit">Update cart</button></div>';
 //		$output[] = '<div><form action="index.php?content_page=cart&action=clear" method="post"><button type="submit">Clear cart</button></div>';
                 $output[] = '<p><a href="index.php?content_page=cart&action=clear" >Clear cart </a></p>';

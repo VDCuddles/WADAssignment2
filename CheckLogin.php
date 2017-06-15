@@ -22,9 +22,6 @@
 		header("Location: http://dochyper.unitec.ac.nz/halpea01/PHPPractical/WADPHPAssignment/index.php?content_page=Login");
         exit;
     }
-	else
-	{
-	    echo "Welcome user " . $_SESSION['current_user'] . "<br>";	
-    }
+
 ?>
 
