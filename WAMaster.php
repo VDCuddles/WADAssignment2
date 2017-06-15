@@ -24,7 +24,6 @@
     <ul class="nav navbar-nav">
     <li><a runat="server" href="index.php?content_page=Introduction">Home</a></li>
     <li><a runat="server" href="index.php?content_page=Browse">Browse</a></li>
-    <li><a runat="server" href="index.php?content_page=ManagePaper">Manage Papers</a></li>
     <li><a runat="server" href="index.php?content_page=WAAboutUs">About Us</a></li>
     <li><a runat="server" href="index.php?content_page=WAContactUs">Contact Us</a></li>
     </ul>
@@ -34,7 +33,7 @@
 
     <?php
     session_start();
-	if (isset($_SESSION['flag']) or isset($_SESSION['current_user'])){
+	if (isset($_SESSION['flag']) and isset($_SESSION['current_user'])){
             echo'<li><a runat="server" href="index.php?content_page=Logout">Logout</a></li>';
         }
         else{

@@ -31,8 +31,10 @@
 	
 ?>
 <!-- User credential form -->
+<p>
 <form method="post">
 Username: <input style="color:#000000;" type="text" name="form_username"><br>
 Password: <input style="color:#000000;" type="password" name="form_password"><br>
 <input type="submit" value="Submit" style="color: black">
 </form>
+</p>
