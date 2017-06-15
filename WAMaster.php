@@ -28,15 +28,17 @@
     <li><a runat="server" href="index.php?content_page=WAContactUs">Contact Us</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-    <li><a runat="server" href="index.php?content_page=cart">Shopping Cart</a></li>
-    <li><a runat="server" href="index.php?content_page=Register">Register</a></li>
 
     <?php
     session_start();
+        if ($_SESSION['current_user'] != 'admin'){
+            echo'<li><a runat="server" href="index.php?content_page=cart">Shopping Cart</a></li>';
+    }
 	if (isset($_SESSION['flag']) and isset($_SESSION['current_user'])){
             echo'<li><a runat="server" href="index.php?content_page=Logout">Logout</a></li>';
         }
         else{
+            echo'<li><a runat="server" href="index.php?content_page=Register">Register</a></li>';
             echo'<li><a runat="server" href="index.php?content_page=Login">Login</a></li>';
         }
     ?>

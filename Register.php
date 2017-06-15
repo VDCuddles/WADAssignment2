@@ -1,79 +1,49 @@
-<!doctype html>
+<!DOCTYPE>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Manage Paper</title>
+<title>Registration</title>
+		<!-- File Heading	
+         Name:			page2Action.php
+         Purpose:		
+         Author:		Xiaosong Li									
+         History:		Created on 20/10/2006
+		 				Modified on 21/05/2007
+						Modified on 29/05/2008 by XL
+                        Modified on 26/05/2011 by XL
+                        Modified on 20/05/2012 by XL
+                        Modified on 19/05/2013 by XL
+                        Modified on 13/10/2013 by XL
+                        Modified on 18/5/2014 by XL
+                        Modified on 12/10/2014 by XL
+                        Modified on 17/10/2015 by XL
+                        Modified on 21/5/2017 by XL
+        -->
+        <LINK REL="STYLESHEET" TYPE="text/css" HREF="WAStyleSheet/Practical.css">
 </head>
 
 <body>
-    <p>
-<form method="post" enctype="multipart/form-data" action="index.php?content_page=ManagePaperAction">
-<table>
-  <tr>
-    <td>Desired Username:</td>
-    <td><input type="text" name="username" size="45"></td>
-  </tr>
-  <tr><td><br></td></tr>
-  <tr>
-    <td>Password:</td>
-    <td><input type="password" name="pass" size="45"></td>
-  </tr>
-  <tr><td><br></td></tr>
-  <tr>
-    <td>Contact Name:</td>
-    <td><input type="text" name="name" size="45"></td>
-  </tr>
-  <tr><td><br></td></tr>
-    <tr>
-    <td>Email Address:</td>
-    <td><input type="email" name="email" size="45"></td>
-  </tr>
-  <tr><td><br></td></tr>
-   <tr>
-    <td>Address:</td>
-    <td><input type="text" name="address" size="45"></td>
-  </tr>
-  <tr><td><br></td></tr>
-   <tr>
-    <td>City:</td>
-    <td><input type="text" name="city" size="45"></td>
-  </tr>
-  <tr><td><br></td></tr>
-   <tr>
-    <td>Country:</td>
-    <td><input type="text" name="country" size="45"></td>
-  </tr>
-  <tr><td><br></td></tr>
-   <tr>
-    <td>Phone:</td>
-    <td><input type="number" name="phone" size="45"></td>
-  </tr>
-  <tr><td><br></td></tr>
-    <td>Profile Image:</td>
-    <td><input type="File" name="image" value="" size="30"></td>
-  </tr>
-    <tr><td><br></td></tr>
-    <tr>
-        <td colspan="2"><input type="Submit" name="submit" value="Submit Registration" style="color:black;"></td>
-  </tr>
-</table>
-</form>
-    </p>
-<?php
-/*
-if (isset($_FILES["paper_file"]) && ($_FILES["paper_file"]["error"] > 0))
-  {
-  echo "Error: " . $_FILES["paper_ file"]["error"] . "<br />";
-  }
-elseif (isset($_FILES["paper_file"]))
-  {
-  echo "<br>" . "Upload: " . $_FILES["paper_file"]["name"] . "<br />";
-  echo "Type: " . $_FILES["paper_file"]["type"] . "<br />";
-  echo "Size: " . ($_FILES["paper_file"]["size"] / 1024) . " Kb<br />";
-  echo "Stored in: " . $_FILES["paper_file"]["tmp_name"] . "<br />";
-  move_uploaded_file($_FILES["paper_file"]["tmp_name"], "../uploads/PHPUploaded /" . $_FILES["paper_file"]["name"]); //Save the file as the supplied name
-  echo "Stored in: " . "../uploads/PHPUploaded/" . $_FILES["paper_file"]["name"];
-  }*/
-?>
+
+<?php 
+// create connection
+$mysqli = new mysqli("localhost", "halpea01", "12111990", "halpea01mysql1");
+if ($mysqli->connect_errno) {
+    echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+}
+
+$mysqli->close();    
+?> 
+<FORM NAME="page3Form" METHOD="POST" ACTION="index.php?content_page=regcomplete">
+<INPUT TYPE="HIDDEN" NAME="CustomerID" VALUE="<?php echo $id; ?>">
+<pre style="width: 30%">
+ Username:<INPUT TYPE="TEXT" NAME="Username" VALUE="<?php echo $username; ?>"><BR>
+ Password:<INPUT TYPE="TEXT" NAME="Password" VALUE="<?php echo $pass; ?>"><BR>
+ Contact Name:<INPUT TYPE="TEXT" NAME="ContactName" VALUE="<?php echo $conname; ?>"><BR>
+ Address:<INPUT TYPE="TEXT" NAME="Address" VALUE="<?php echo $addy; ?>"><BR>
+ City:<INPUT TYPE="TEXT" NAME="City" VALUE="<?php echo $city; ?>"><BR>
+ Country:<INPUT TYPE="TEXT" NAME="Country" VALUE="<?php echo $country; ?>"><BR>
+ Phone:<INPUT TYPE="number" NAME="Phone" VALUE="<?php echo $phone; ?>"><BR>
+</pre>
+<INPUT TYPE="SUBMIT"><BR> 
+</FORM> 
 </body>
 </html>

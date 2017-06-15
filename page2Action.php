@@ -58,7 +58,7 @@ $mysqli->close();
 ?> 
 <FORM NAME="page3Form" METHOD="POST" ACTION="index.php?content_page=page3Action">
 <INPUT TYPE="HIDDEN" NAME="CustomerID" VALUE="<?php echo $id; ?>">
-<pre>
+<pre style="width: 30%">
  Customer ID:<INPUT TYPE="TEXT" NAME="CustomerID" VALUE="<?php echo $id; ?>"><BR>
  Username:<INPUT TYPE="TEXT" NAME="Username" VALUE="<?php echo $username; ?>"><BR>
  Password:<INPUT TYPE="TEXT" NAME="Password" VALUE="<?php echo $pass; ?>"><BR>
