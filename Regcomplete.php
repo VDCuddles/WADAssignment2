@@ -66,6 +66,10 @@ if ($mysqli->connect_errno) {
   $city=$_POST[City];
   $country=$_POST[Country];
   $phone=$_POST[Phone];
+    echo "<p><h4>Thank you for registering. Your details have been saved as below. An email has been sent to your account as confirmation.</h4></p>";
+
+    mail($emailaddy,"Quality Bags Account Registered","<html><head><title>Oh hey check it out</title></head><body>You done got an email son</body></html>", "FROM: $emailaddy",  "Content-type: text/html\n"); 
+  
   echo "<tr>";
   echo "<td>$username</td>";
   echo "<td>$pass</td>";
