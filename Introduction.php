@@ -1,3 +1,4 @@
+
 <p>
    <h1 style="text-align:center;">Welcome to Quality Bags.</h1>
    <h2 style="text-align:center;">Please feel free to browse our selection.</h2>
