@@ -46,6 +46,7 @@ while ($row = $rs->fetch_assoc())
   $username=$row["Username"];
   $pass=$row["Password"];
   $conname=$row["ContactName"];
+  $emailaddy=$row["Emailaddress"];
   $addy=$row["Address"];
   $city=$row["City"];
   $country=$row["Country"];
@@ -63,10 +64,11 @@ $mysqli->close();
  Username:<INPUT TYPE="TEXT" NAME="Username" VALUE="<?php echo $username; ?>"><BR>
  Password:<INPUT TYPE="TEXT" NAME="Password" VALUE="<?php echo $pass; ?>"><BR>
  Contact Name:<INPUT TYPE="TEXT" NAME="ContactName" VALUE="<?php echo $conname; ?>"><BR>
+ Email Address:<INPUT TYPE="email" NAME="Emailaddress" VALUE="<?php echo $emailaddy; ?>"><BR>
  Address:<INPUT TYPE="TEXT" NAME="Address" VALUE="<?php echo $addy; ?>"><BR>
  City:<INPUT TYPE="TEXT" NAME="City" VALUE="<?php echo $city; ?>"><BR>
  Country:<INPUT TYPE="TEXT" NAME="Country" VALUE="<?php echo $country; ?>"><BR>
- Phone:<INPUT TYPE="TEXT" NAME="Phone" VALUE="<?php echo $phone; ?>"><BR>
+ Phone:<INPUT TYPE="number" NAME="Phone" VALUE="<?php echo $phone; ?>"><BR>
  Enabled:<INPUT TYPE="TEXT" NAME="Enabled" VALUE="<?php echo $enabled; ?>"><BR>
 </pre>
 <INPUT TYPE="SUBMIT"><BR> 

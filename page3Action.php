@@ -33,6 +33,7 @@ if ($mysqli->connect_errno) {
 			SET Username='$_POST[Username]',
 			    Password='$_POST[Password]',
 			    ContactName='$_POST[ContactName]',
+			    Emailaddress='$_POST[Emailaddress]',
 			    Address='$_POST[Address]',
 			    City='$_POST[City]',
 			    Country='$_POST[Country]',
@@ -80,6 +81,7 @@ if ($mysqli->connect_errno) {
 	    <TH> Username </TH>
 	    <TH> Password </TH>
 	    <TH> Contact Name </TH>
+	    <TH> Email Address </TH>
 	    <TH> Address </TH>
 	    <TH> City </TH>
 	    <TH> Country </TH>
@@ -119,6 +121,7 @@ if ($mysqli->connect_errno) {
             $username=$row["Username"];
             $pass=$row["Password"];
             $conname=$row["ContactName"];
+            $emailaddy=$row["Emailaddress"];
             $addy=$row["Address"];
             $city=$row["City"];
             $country=$row["Country"];
@@ -128,6 +131,7 @@ if ($mysqli->connect_errno) {
 	  echo "<td>$username</td>";
 	  echo "<td>$pass</td>";
 	  echo "<td>$conname</td>";
+	  echo "<td>$emailaddy</td>";
 	  echo "<td>$addy</td>";
 	  echo "<td>$city</td>";
 	  echo "<td>$country</td>";

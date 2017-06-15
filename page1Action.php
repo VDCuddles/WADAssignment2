@@ -50,6 +50,7 @@ echo "<th>Customer ID</th>";
 echo "<th>Username</th>";
 echo "<th>Password</th>";
 echo "<th>Contact Name</th>";
+echo "<th>Email Address</th>";
 echo "<th>Address</th>";
 echo "<th>City</th>";
 echo "<th>Country</th>";
@@ -64,6 +65,7 @@ while ($row = $rs->fetch_assoc())
   $username=$row["Username"];
   $pass=$row["Password"];
   $conname=$row["ContactName"];
+  $emailaddy=$row["Emailaddress"];
   $addy=$row["Address"];
   $city=$row["City"];
   $country=$row["Country"];
@@ -73,6 +75,7 @@ while ($row = $rs->fetch_assoc())
   echo "<td>$username</td>";
   echo "<td>$pass</td>";
   echo "<td>$conname</td>";
+  echo "<td>$emailaddy</td>";
   echo "<td>$addy</td>";
   echo "<td>$city</td>";
   echo "<td>$country</td>";
