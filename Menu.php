@@ -4,6 +4,7 @@
 session_start();
     if (isset($_SESSION['flag']) and isset($_SESSION['current_user']) and ($_SESSION['current_user'] == 'admin')){
         echo'<p><a href="index.php?content_page=page1action">Edit Customer Account Information</a><br/></p>';
+        echo'<p><a href="index.php?content_page=Createbag">Create Bag</a><br/></p>';
         echo'<p><a href="index.php?content_page=orders">Current Orders</a><br/></p>';
     }
     else if (isset($_SESSION['flag']) and isset($_SESSION['current_user']) and $_SESSION['current_user'] != 'admin'){

@@ -7,18 +7,18 @@ $error_handler = set_error_handler("userErrorHandler");
 <html>
 <head>
 <meta charset="utf-8">
-<title>Manage paper Action</title>
+<title>Create Bag Action</title>
 </head>
 
 <body>
 <?php
-if (isset($_FILES["paper_file"]) && ($_FILES["paper_file"]["error"] > 0))
+if (isset($_FILES["bagimage"]) && ($_FILES["bagimage"]["error"] > 0))
   {
   echo "Error: " . $_FILES["paper_ file"]["error"] . "<br />";
   }
-elseif (isset($_FILES["paper_file"]))
+elseif (isset($_FILES["bagimage"]))
   {
-    move_uploaded_file($_FILES["paper_file"]["tmp_name"], "../WADPHPAssignment/WAImages/" . $_FILES["paper_file"]["name"]); //Save the file as the supplied name
+    move_uploaded_file($_FILES["bagimage"]["tmp_name"], "../WADPHPAssignment/WAImages/bags/" . $_FILES["bagimage"]["name"]); //Save the file as the supplied name
   }
 else
   {
@@ -35,10 +35,10 @@ if ($mysqli->connect_errno) {
 //echo $mysqli->host_info . "\n";
   
 // create SQL statement 
-$sql = "INSERT INTO Employees(FirstName,LastName,Title)
-        VALUES('" . $_POST['paper_author'] . "','" 
-		         . $_FILES["paper_file"]["name"] . "','" 
-				 . $_POST['paper_title'] . "')"; 
+$sql = "INSERT INTO products(UnitPrice,ImageUrl,ProductName)
+        VALUES('" . $_POST['bagprice'] . "','" 
+		         . $_FILES["bagimage"]["name"] . "','" 
+				 . $_POST['bagname'] . "')"; 
 				 
 // execute SQL statement and get results 
 if (!$mysqli->query($sql)) {
@@ -47,11 +47,11 @@ if (!$mysqli->query($sql)) {
 ?>
 <?php
 //Select the file information
-$sql="SELECT Employees.EmployeeID As paper_ID,
-              Employees.FirstName As paper_author,
-              Employees.LastName As paper_file,
-              Employees.Title As paper_title 
-      FROM Employees";
+$sql="SELECT Products.ProductID As product_ID,
+              Products.ProductName As bagprice,
+              Products.ImageUrl As bagimage,
+              Products.UnitPrice As bagname 
+      FROM Products";
 	  
 $rs=$mysqli->query($sql);
 if (!$rs)
@@ -60,23 +60,23 @@ if (!$rs)
 //Display the file information in a table
 echo "<TABLE BORDER='1'>
       <TR>
-      <TH> paper ID </TH>
-      <TH> paper author </TH>
-      <TH> paper file </TH>
-      <TH> paper title </TH>
+      <TH> Product ID </TH>
+      <TH> Bag Price </TH>
+      <TH> Bag Image </TH>
+      <TH> Bag Name </TH>
       </TR>";
 	  
 while ($row = $rs->fetch_assoc())
 {
-  $paper_id=$row["paper_ID"];
-  $paper_author=$row["paper_author"];
-  $paper_file=$row["paper_file"];
-  $paper_title=$row["paper_title"];
+  $product_id=$row["product_ID"];
+  $bagprice=$row["bagprice"];
+  $bagimage=$row["bagimage"];
+  $bagname=$row["bagname"];
   echo "<TR>";
-  echo "<TD>$paper_id</TD>";
-  echo "<TD>$paper_author</TD>";
-  echo "<TD>$paper_file</TD>";
-  echo "<TD>$paper_title</TD>";
+  echo "<TD>$product_id</TD>";
+  echo "<TD>$bagprice</TD>";
+  echo "<TD>$bagimage</TD>";
+  echo "<TD>$bagname</TD>";
   echo "</TR>";
 }
 
@@ -88,7 +88,7 @@ echo "</TABLE>";
 <form method="post" enctype="multipart/form-data" action="index.php?content_page=ReviewerComments">
 <br>
 Paper ID:&nbsp;&nbsp;&nbsp;
-<input type="text" name="paper_ID" size="20"><br> 
+<input type="text" name="product_ID" size="20"><br> 
 Icon File:&nbsp;&nbsp;&nbsp;&nbsp;
 <input type="File" name="icon_file" value="" size="30"><br>
 <br> 
