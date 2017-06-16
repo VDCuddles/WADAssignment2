@@ -17,6 +17,10 @@
     <td><input type="File" name="bagimage" value="" size="30"></td>
   </tr>
   <tr>
+    <td>Category:</td>
+    <td><input type="number" step="1" name="bagcat" value="" size="30"></td>
+  </tr>
+  <tr>
     <td>Price:</td>
     <td><input type="number" step="0.0001" name="bagprice" size="45"></td>
   </tr>

@@ -80,15 +80,6 @@ class Business {
             	if ($cart) {
 			$items = explode(',',$cart);
 			$newcart = '';
-//			foreach ($items as $item) {
-//				if ($_GET['id'] != $item) {
-//					if ($newcart != '') {
-//						$newcart .= ','.$item;
-//					} else {
-//						$newcart = $item;
-//					}
-//				}
-//			}
 			$cart = $newcart;                }
             break;
 	case 'add':

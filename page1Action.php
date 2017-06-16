@@ -89,7 +89,7 @@ echo "</table>";
 // free resources and close connection 
 $mysqli->close();    
 ?> 
-<INPUT TYPE="SUBMIT"><br/>
+<input type="submit" value="Edit" style="color: black"><br/>
 </form>
 </body>
 </html>
