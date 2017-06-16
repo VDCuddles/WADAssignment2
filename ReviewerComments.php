@@ -2,23 +2,7 @@
 <html>
 <head>
 <title>ReviewerComments</title>
-		<!-- File Heading	
-         Name:			ReviewerComments.php
-         Purpose:		Retrieve paper related information
-         Author:		Xiaosong Li									
-         History:		Created on 10/10/2006
-                        Modified on 26/5/2010
-                        Modified on 20/5/2012
-                        Modified on 20/5/2012
-                        Modified on 19/5/2013
-                        Modified on 13/10/2013
-                        Modified on 18/5/2014
-                        Modified on 12/10/2014
-                        Modified on 28/5/2015
-                        Modified on 17/10/2015
-                        Modified on 21/05/2015
-                        Modified on 21/05/2017
-        -->
+
 <LINK href="WAStyleSheet/Practical.css" type="text/css" rel="STYLESHEET">
 </head>
 

@@ -13,15 +13,7 @@
 	</script>
 <link href="WABootstrap/bootstrap.css" rel="stylesheet" type="text/css" />
 <link href="WAStyleSheet/Practical.css" rel="stylesheet" type="text/css" />
-      <!-- File Heading	
-       Name:	    index.php
-       Purpose:		Display a supplied content page with the defined master page
-                    This is the main page to implement the master page concept in PHP
-       Author:		Xiaosong Li									
-       History:		Created on 28/5/2015
-                    Modified by XL 28/5/2015
-                    Modified by XL 26/5/2016
-      -->
+
        <script type="text/javascript">
     		function current_time()
 		{

@@ -1,18 +1,5 @@
 <html>
-<!--- Author Xiaosong Li
-	  16/10/06
-	  Modified on 21/05/2007
-	  Modified on 29/05/2008 by XL
-      Modified on 17/05/2009 by XL
-      Modified on 26/05/2011 by XL
-      Modified on 20/05/2012 by XL
-      Modified on 19/05/2013 by XL
-      Modified on 13/10/2013 by XL
-      Modified on 18/05/2014 by XL
-      Modified on 12/10/2014 by XL
-      Modified on 17/10/2014 by XL
-      Modified on 21/5/2017 by XL
---->
+
 <head>
 	<title>Page3Action</title>
 	<LINK REL=STYLESHEET TYPE="text/css" HREF="WAStyleSheet/Practical.css">

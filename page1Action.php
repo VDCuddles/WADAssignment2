@@ -3,19 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <title>page1Action.php</title>
-		<!-- File Heading	
-         Name:			page1Action.php
-         Purpose:		
-         Author:		Xiaosong Li									
-         History:		Created on 10/10/2006
-                        Modified on 26/5/2010
-                        Modified on 19/5/2013
-                        Modified on 13/10/2013
-                        Modified on 18/5/2014
-                        Modified on 12/10/2014
-                        Modified on 17/10/2015
-                        Modified on 21/5/2017
-        -->
+
         <LINK REL="STYLESHEET" TYPE="text/css" HREF="WAStyleSheet/Practical.css">
 </head>
 

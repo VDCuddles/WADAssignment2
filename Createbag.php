@@ -30,20 +30,7 @@
 </table>
 </form>
 <?php
-/*
-if (isset($_FILES["bagimage"]) && ($_FILES["bagimage"]["error"] > 0))
-  {
-  echo "Error: " . $_FILES["paper_ file"]["error"] . "<br />";
-  }
-elseif (isset($_FILES["bagimage"]))
-  {
-  echo "<br>" . "Upload: " . $_FILES["bagimage"]["name"] . "<br />";
-  echo "Type: " . $_FILES["bagimage"]["type"] . "<br />";
-  echo "Size: " . ($_FILES["bagimage"]["size"] / 1024) . " Kb<br />";
-  echo "Stored in: " . $_FILES["bagimage"]["tmp_name"] . "<br />";
-  move_uploaded_file($_FILES["bagimage"]["tmp_name"], "../uploads/PHPUploaded /" . $_FILES["bagimage"]["name"]); //Save the file as the supplied name
-  echo "Stored in: " . "../uploads/PHPUploaded/" . $_FILES["bagimage"]["name"];
-  }*/
+
 ?>
 </body>
 </html>

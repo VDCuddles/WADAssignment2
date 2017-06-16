@@ -88,17 +88,6 @@ while ($row = $rs->fetch_assoc())
 echo "</TABLE>";
 ?>
 
-<!--allow users upload their icon file:-->
-
-<!--<form method="post" enctype="multipart/form-data" action="index.php?content_page=ReviewerComments">
-<br>
-Paper ID:&nbsp;&nbsp;&nbsp;
-<input type="text" name="product_ID" size="20"><br> 
-Icon File:&nbsp;&nbsp;&nbsp;&nbsp;
-<input type="File" name="icon_file" value="" size="30"><br>
-<br> 
-<input type="Submit" name="submit" value="Submit Icon">
-</form>-->
 
 </body>
 </html>

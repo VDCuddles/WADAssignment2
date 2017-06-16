@@ -5,16 +5,7 @@ require("CheckLogin.php");
 <html>
 <head>
 		<title>Modify Records</title>
-		<!-- File Heading	
-         Name:			ModifyRecords.php
-         Purpose:		The start page of modifing records 
-         Author:		Xiaosong Li									
-         History:		Modified on 14/10/2010
-                        Modified on 19/5/2013
-                        Modified on 18/5/2014
-                        Modified on 17/10/2015
-                        Modified on 21/5/2017
-         -->
+
          <link rel="stylesheet" type="text/css" href="WAStyleSheet/Practical.css"/> 
 			
 	<script type="text/javascript">
